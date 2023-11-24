@@ -1,5 +1,6 @@
 import React from "react";
 import Chapters from "./components/Chapters";
+import Entername from "./components/Entername";
 const App = () => {
   const story ={
     scene1:{
@@ -30,12 +31,19 @@ const App = () => {
     },
    
     scene4:{
+      type:'playerinput',
+      background:'reception',
+      component:Entername,
+      choices:[
+        { text:'Next',nextScene:'scene5'},
+      ]
+    },
+    scene5:{
       type:'plain',
       background:'reception',
       text:"Welcome to the institute",
       choices:[],
     }
-  
   }
   return (
     <div className="App">

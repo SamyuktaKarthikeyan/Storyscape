@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import PlainScene from './PlainScene';
 import DialogueScene from './DialogueScene';
 import PlayerInputScene from './PlayerInputScene';
+import '../App.css'
 
 const Chapters = ({ story }) => {
   const [currentScene, setCurrentScene] = useState('scene1');
@@ -37,13 +38,15 @@ const Chapters = ({ story }) => {
             handleChoiceClick={handleChoiceClick}
           />
         );
-      case 'playerinput':
-        return (
-          <PlayerInputScene
-            text={currentSceneData.text}
-            handleInputSubmit={handleInputSubmit}
-          />
-        );
+        case 'playerinput':
+          return (
+            <PlayerInputScene
+              component={currentSceneData.component}
+              choices={currentSceneData.choices}
+            handleChoiceClick={handleChoiceClick}
+              
+            />
+          );
       default:
         return null;
     }

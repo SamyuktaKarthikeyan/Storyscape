@@ -1,23 +1,19 @@
-import React from 'react'
-
 // PlayerInputScene.js
-const PlayerInputScene = ({ text, handleInputSubmit }) => {
-    const [inputValue, setInputValue] = useState('');
-  
-    const handleChange = (e) => {
-      setInputValue(e.target.value);
-    };
-  
-    const handleSubmit = () => {
-      handleInputSubmit(inputValue);
-    };
-  
-    return (
-      <div>
-        <p>{text}</p>
-        <input type="text" value={inputValue} onChange={handleChange} />
-        <button onClick={handleSubmit}>Submit</button>
-      </div>
-    );
-  };
-export default PlayerInputScene
+import React, { useState } from 'react';
+
+const PlayerInputScene = ({  component, choices, handleChoiceClick }) => {
+  const DynamicComponent = component;
+
+  return (
+    <div>
+      {DynamicComponent ? (
+        <DynamicComponent choices={choices} handleChoiceClick={handleChoiceClick}/>
+      ) : (
+        <p>Loading...</p>
+      )}
+      
+    </div>
+  );
+};
+
+export default PlayerInputScene;
