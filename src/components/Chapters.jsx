@@ -4,11 +4,14 @@ import PlainScene from './PlainScene';
 import DialogueScene from './DialogueScene';
 import PlayerInputScene from './PlayerInputScene';
 import '../App.css'
+import { useSelector } from 'react-redux';
 
 const Chapters = ({ story }) => {
+  const username = useSelector(state => state.username);
   const [currentScene, setCurrentScene] = useState('scene1');
 
   const handleChoiceClick = (nextScene) => {
+    console.log(username)
     setCurrentScene(nextScene);
   };
 
@@ -19,7 +22,6 @@ const Chapters = ({ story }) => {
 
   const renderScene = () => {
     const currentSceneData = story[currentScene];
-
     switch (currentSceneData.type) {
       case 'plain':
         return (
