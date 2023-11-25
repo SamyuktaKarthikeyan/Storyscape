@@ -1,0 +1,37 @@
+/* Chapters.css */
+
+.plain {
+    height: 100vh; /* Set the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+  }
+  
+  .plaincard {
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to improve text readability */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Add rounded corners to the card */
+    max-width: 600px; /* Optional: Set a maximum width for the card */
+    text-align: center;
+  }
+  
+  .choices {
+    margin-top: 20px;
+  }
+  
+  .choices button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .choices button:hover {
+    background-color: #0056b3;
+  }
+  

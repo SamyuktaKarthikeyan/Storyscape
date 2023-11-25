@@ -1,6 +1,8 @@
 import React from "react";
-const PlainScene = ({ text, choices, handleChoiceClick }) => (
-    <div>
+import '../styles/Chapters.css'
+const PlainScene = ({ text, choices, handleChoiceClick, background }) => (
+    <div className="plain" style={{  backgroundImage: `url(${background})` }}>
+      <div className="plaincard">
       <p>{text}</p>
       <div className="choices">
         {choices.map((choice, index) => (
@@ -8,6 +10,7 @@ const PlainScene = ({ text, choices, handleChoiceClick }) => (
             {choice.text}
           </button>
         ))}
+      </div>
       </div>
     </div>
   );
