@@ -1,13 +1,15 @@
 import React from "react";
 import Chapters from "./components/Chapters";
 import Entername from "./components/Entername";
+import Navbar from "./components/Navbar";
 import { useSelector } from "react-redux";
+const outside="https://idahocapitalsun.com/wp-content/uploads/2022/08/Ambulance-outside-OHSU-ED-Christine-Torres-Hicks.jpg";
 const App = () => {
   const name=useSelector(state=>state.username)
   const story ={
     scene1:{
       type:'plain',
-      background:'outside',
+      background:outside,
       text:"Welcome to Edenbrook. Bostons's prestigious research teaching hospital",
       choices:[
         { text:'Next',nextScene:'scene2'},
@@ -232,6 +234,7 @@ const App = () => {
   }
   return (
     <div className="App">
+      <Navbar/>
       <Chapters story={story} />
     </div>
   );

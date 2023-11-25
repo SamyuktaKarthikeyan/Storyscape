@@ -7,7 +7,7 @@ const Navbar = () => {
         navigate('/chapters');
     }
   return (
-    <div className='navbar'>
+    <div className='nav-bar'>
         <div className="navhead">
             <h1>Storyscape</h1>
         </div>

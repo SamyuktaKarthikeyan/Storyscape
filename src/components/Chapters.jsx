@@ -29,7 +29,7 @@ const Chapters = ({ story }) => {
             text={currentSceneData.text}
             choices={currentSceneData.choices}
             handleChoiceClick={handleChoiceClick}
-            background={`../assets/${currentSceneData.background}.jpg`}
+            background={currentSceneData.background}
           />
         );
       case 'dialogue':
@@ -65,7 +65,6 @@ const Chapters = ({ story }) => {
   return (
     <div className="chapters">
       <div className="story-container">
-        <h1>Interactive Story</h1>
         {renderScene()}
         </div>
         <div className="progress-bar-container">
