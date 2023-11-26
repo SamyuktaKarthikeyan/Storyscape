@@ -49,6 +49,7 @@ const Chapters = ({ story }) => {
               component={currentSceneData.component}
               choices={currentSceneData.choices}
             handleChoiceClick={handleChoiceClick}
+            background={currentSceneData.background}
               
             />
           );

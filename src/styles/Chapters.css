@@ -13,7 +13,7 @@
     background-color: rgba(255, 255, 255, 0.92); /* Add a semi-transparent background to improve text readability */
     padding: 20px;
     border-radius: 10px; /* Optional: Add rounded corners to the card */
-    max-width: 600px; /* Optional: Set a maximum width for the card */
+    width: 600px; /* Optional: Set a maximum width for the card */
     text-align: center;
   }
   
@@ -21,7 +21,7 @@
     margin-top: 20px;
   }
   
-  .choices button {
+  .plaincard button {
     margin: 5px;
     padding: 10px 20px;
     background-color: #007bff;
@@ -31,7 +31,12 @@
     cursor: pointer;
   }
   
-  .choices button:hover {
+  .plaincard button:hover {
     background-color: #0056b3;
+  }
+  .dialogueimg{
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
   }
   

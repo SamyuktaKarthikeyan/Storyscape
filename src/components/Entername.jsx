@@ -14,7 +14,7 @@ const Entername = ({choices, handleChoiceClick}) => {
         handleChoiceClick(choices[0].nextScene)
     }
   return (
-    <div>
+    <div className='plaincard'>
        <h1>Enter your name</h1>
        <input type="text" name="name" id="name" value={data.name} onChange={(e)=>setData({...data, name:e.target.value})} /> <br />
         <button onClick={register}>Submit</button>
