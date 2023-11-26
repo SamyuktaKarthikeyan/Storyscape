@@ -1,5 +1,6 @@
 import React from "react";
-const DialogueScene = ({ text, person, choices, handleChoiceClick }) => (
+const DialogueScene = ({ text, person, choices, handleChoiceClick, background }) => (
+  <div className="plain" style={{  backgroundImage: `url(${background})`, backgroundSize:"cover",backgroundRepeat:"no-repeat" }}>
     <div>
       <img src={`images/${person}.png`} alt={person} />
       <p>{text}</p>
@@ -10,6 +11,7 @@ const DialogueScene = ({ text, person, choices, handleChoiceClick }) => (
           </button>
         ))}
       </div>
+    </div>
     </div>
   );
   export default DialogueScene

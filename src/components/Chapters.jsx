@@ -39,6 +39,8 @@ const Chapters = ({ story }) => {
             person={currentSceneData.person}
             choices={currentSceneData.choices}
             handleChoiceClick={handleChoiceClick}
+            background={currentSceneData.background}
+
           />
         );
         case 'playerinput':

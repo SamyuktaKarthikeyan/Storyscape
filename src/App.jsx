@@ -4,6 +4,8 @@ import Entername from "./components/Entername";
 import Navbar from "./components/Navbar";
 import { useSelector } from "react-redux";
 const outside="https://idahocapitalsun.com/wp-content/uploads/2022/08/Ambulance-outside-OHSU-ED-Christine-Torres-Hicks.jpg";
+const reception="https://www.buildingbetterhealthcare.com/article-image-alias/reception-and-waiting-areas-key-to.jpg";
+const corridor="https://media3.cgtrader.com/variants/gKbuhhxWNeYeGNPsMzBXcwnP/64d1262c1acde2eb3beef249c4695a8ad88c958dd79db36f763bf631017addd0/1.jpg";
 const App = () => {
   const name=useSelector(state=>state.username)
   const story ={
@@ -17,7 +19,7 @@ const App = () => {
     },
     scene2:{
       type:'dialogue',
-      background:'reception',
+      background:reception,
       person:'Dr. Ines Delarosa',
       text:"Hi! You seem lost. Let me guess... First day of your medical residency",
       choices:[
@@ -26,7 +28,7 @@ const App = () => {
     },
     scene3:{
       type:'dialogue',
-      background:'reception',
+      background:reception,
       person:'Dr. Ines Delarosa',
       text:"You're gonna need a photo ID. Just step over here, in front of camera...",
       choices:[
@@ -36,7 +38,7 @@ const App = () => {
     
     scene4:{
       type:'playerinput',
-      background:'reception',
+      background:reception,
       component:Entername,
       choices:[
         { text:'Next',nextScene:'scene5'},
@@ -44,7 +46,7 @@ const App = () => {
     },
     scene5:{
       type:'dialogue',
-      background:'reception',
+      background:reception,
       person:'Dr. Ines Delarosa',
       text:`Here you go, Dr.${name}. I wish my ID photo looked that good!  `,
       choices:[
@@ -53,7 +55,7 @@ const App = () => {
     },
     scene6:{
       type:'dialogue',
-      background:'reception',
+      background:reception,
       person:name,
       text:"My first day as a real doctor! Am I dreaming?",
       choices:[
@@ -62,7 +64,7 @@ const App = () => {
     },
     scene7:{
       type:'dialogue',
-      background:'reception',
+      background:reception,
       person:'Dr. Ines Delarosa',
       text:"I was in your shoes last year. Believe me, med school was nothing compared to this.",
       choices:[
@@ -71,7 +73,7 @@ const App = () => {
     },
     scene8:{
       type:'dialogue',
-      background:'reception',
+      background:reception,
       person:'Dr. Ines Delarosa',
       text:"Your three years of residency will be the toughest, most amazing years of your life!",
       choices:[
@@ -80,7 +82,7 @@ const App = () => {
     },
     scene9:{
       type:'dialogue',
-      background:'reception',
+      background:reception,
       person:'Dr. Ines Delarosa',
       text:"But this first year as an intern will be the craziest of all.",
       choices:[
@@ -89,7 +91,7 @@ const App = () => {
     },
     scene10:{
       type:'dialogue',
-      background:'reception',
+      background:reception,
       person:name,
       text:"I'm ready for it. I've been dreaming of woking at Edenbrook for years.",
       choices:[
@@ -98,7 +100,7 @@ const App = () => {
     },
     scene11:{
       type:'dialogue',
-      background:'reception',
+      background:reception,
       person:name,
       text:"Ever since I learned Ethan Ramsey was here. His research basically inspired me to apply to med school!",
       choices:[
@@ -107,7 +109,7 @@ const App = () => {
     },
     scene12:{
       type:'dialogue',
-      background:'reception',
+      background:reception,
       person:name,
       text:"So... any words of advice?",
       choices:[
@@ -116,7 +118,7 @@ const App = () => {
     },
     scene13:{
       type:'dialogue',
-      background:'reception',
+      background:reception,
       person:'Dr. Ines Delarosa',
       text:"Make friends. With your fellow interns your senior residents, even your patients! Friends will get you through anything.",
       choices:[
@@ -125,7 +127,7 @@ const App = () => {
     },
     scene14:{
       type:'dialogue',
-      background:'reception',
+      background:reception,
       person:'Dr. Ines Delarosa',
       text:"And, uh, try not to annoy the attendings! You do not want to get on your boss's bad side!",
       choices:[
@@ -134,7 +136,7 @@ const App = () => {
     },
     scene15:{
       type:'dialogue',
-      background:'reception',
+      background:reception,
       person:name,
       text:"Noted!",
       choices:[
@@ -143,7 +145,7 @@ const App = () => {
     },
     scene16:{
       type:'plain',
-      background:'corridor',
+      background:corridor,
       text:"You're passing through the waiting room on the way to orientation when you hear gasps behind you!",
       choices:[
         { text:'Next',nextScene:'scene17'},
@@ -151,7 +153,7 @@ const App = () => {
     },
     scene17:{
       type:'dialogue',
-      background:'corridor',
+      background:corridor,
       person:'woman',
       text:"Nnhhh....",
       choices:[
@@ -160,7 +162,7 @@ const App = () => {
     },
     scene18:{
       type:'plain',
-      background:'corridor',
+      background:corridor,
       text:"A woman collapses out of her seat! Other waiting patients crowd around her...",
       choices:[
         { text:'Next',nextScene:'scene19'},
@@ -168,7 +170,7 @@ const App = () => {
     },
     scene19:{
       type:'dialogue',
-      background:'corridor',
+      background:corridor,
       person:name,
       text:"...",
       choices:[
@@ -179,7 +181,7 @@ const App = () => {
     },
     scene20:{
       type:'dialogue',
-      background:'corridor',
+      background:corridor,
       person:name,
       text:"Everybody, step back! I'm a doctor!",
       choices:[
@@ -188,7 +190,7 @@ const App = () => {
     },
     scene21:{
       type:'plain',
-      background:'corridor',
+      background:corridor,
       text:"You hurry over to the woman just as another doctor rushes in. He kneels at her side and checks her pulse",
       choices:[
         { text:'Next',nextScene:'scene23'},
@@ -196,7 +198,7 @@ const App = () => {
     },
     scene22:{
       type:'plain',
-      background:'corridor',
+      background:corridor,
       text:"You move aside just as another doctor rushes in. He kneels at her side and checks her pulse",
       choices:[
         { text:'Next',nextScene:'scene23'},
@@ -204,7 +206,7 @@ const App = () => {
     },
     scene23:{
       type:'dialogue',
-      background:'corridor',
+      background:corridor,
       person:'Dr. Ethan Ramsey',
       text:"Pulse is weak. She's unresponsive.",
       choices:[
@@ -213,7 +215,7 @@ const App = () => {
     },
     scene24:{
       type:'plain',
-      background:'corridor',
+      background:corridor,
       text:"He looks around and spots you.",
       choices:[
         { text:'Next',nextScene:'scene25'},
@@ -221,7 +223,7 @@ const App = () => {
     },
     scene25:{
       type:'dialogue',
-      background:'corridor',
+      background:corridor,
       person:'Dr. Ethan Ramsey',
       text:"You. Rookie. Get in here.",
       choices:[

@@ -11,6 +11,7 @@ const PlainScene = ({ text, choices, handleChoiceClick, background }) => (
           </button>
         ))}
       </div>
+      
       </div>
     </div>
   );

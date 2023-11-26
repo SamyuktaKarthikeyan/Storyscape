@@ -18,6 +18,10 @@ body{
 }
 
 .progress-bar-container {
+  z-index: 9;
+  width: 90%;
+  transform: translateY(-100px);
+  margin: auto;
   margin-top: 20px;
   height: 20px;
   background-color: #eee;
